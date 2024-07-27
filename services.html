@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Good Care</title>
+    <!-- Normalize CSS for cross-browser compatibility -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- Main stylesheet linking -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- Javascript link -->
+    <script src="./main.js"></script>
+  </head>
+  <body>
+    <!-- Header Start -->
+    <header>
+      <div class="logo">
+        <div class="icon">
+          <i class="fa-solid fa-hospital"></i>
+        </div>
+        <h1>Good Care</h1>
+      </div>
+      <nav>
+        <div class="menu" onclick="display_menu()"></div>
+        <ul id="menu">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./news.html">News</a></li>
+          <li><a href="./services.html">Service</a></li>
+          <li><a href="./contact.html">Contact us</a></li>
+          <li>
+            <a href="./appointment.html" class="app"
+              >Appointment<i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Header End -->
+    <!-- Doctors Section Start -->
+    <section class="doctors">
+      <h2>Doctors</h2>
+      <h3>Our Experience Doctors</h3>
+      <div class="cards">
+        <div class="doc">
+          <div class="image">
+            <img src="./photos/team-1.jpg" alt="Doctor" />
+          </div>
+          <div class="text">
+            <h4>Olivia Rodriguez</h4>
+            <p>Cardiology</p>
+          </div>
+        </div>
+        <div class="doc">
+          <div class="image">
+            <img src="./photos/team-2.jpg" alt="Doctor" />
+          </div>
+          <div class="text">
+            <h4>Adam Johnson</h4>
+            <p>Emergency</p>
+          </div>
+        </div>
+        <div class="doc">
+          <div class="image">
+            <img src="./photos/team-3.jpg" alt="Doctor" />
+          </div>
+          <div class="text">
+            <h4>Sophia Lee</h4>
+            <p>Surgery</p>
+          </div>
+        </div>
+        <div class="doc">
+          <div class="image">
+            <img src="./photos/team-4.jpg" alt="Doctor" />
+          </div>
+          <div class="text">
+            <h4>Ethan Martinez</h4>
+            <p>Neurology</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Doctors Section End -->
+    <!-- Programs Section Start -->
+    <section class="programs">
+      <h2>Health Programs</h2>
+      <div class="content">
+        <div class="text">
+          <p>
+            <span>1- Comprehensive Primary Care:</span> Our primary care
+            providers offer a wide range of services, including preventive care,
+            health screenings, vaccinations, and management of chronic
+            conditions. Whether you need a routine check-up or ongoing care, our
+            team is here to support your overall health and well-being
+          </p>
+          <p>
+            <span>2- Empowering Patients with Knowledge:</span> Explore our
+            web-based patient education program called Emmi. It provides
+            easy-to-understand medical information on managing chronic
+            conditions, preparing for procedures, and making informed health
+            decisions. Accessible from any device, Emmi helps patients stay
+            informed and engaged in their care
+          </p>
+          <p>
+            <span>3- Long COVID Support:</span> If you’re experiencing lingering
+            symptoms after COVID-19, our specialized services can help. Our
+            Centers of Excellence focus on Long COVID, providing personalized
+            care, rehabilitation, and support for those affected. You’re not
+            alone—we’re here to help you recover and regain your health
+          </p>
+        </div>
+        <div class="image">
+          <img src="./photos/pograms.jpg" alt="'Doctors" />
+        </div>
+      </div>
+    </section>
+    <!-- Programs Section End -->
+    <!-- Services Section Start -->
+    <section class="services">
+      <h2>Services</h2>
+      <h3>Health Care Solutions</h3>
+      <div class="cards">
+        <div class="service">
+          <div class="icon">
+            <i class="fa fa-heartbeat text-primary fs-4"></i>
+          </div>
+          <h4>Cardiology</h4>
+          <p>
+            Our team of over 100 cardiologists ensures that you receive the most
+            appropriate and advanced treatments known to medicine. We offer a
+            full range of services, including diagnostic evaluations,
+            non-invasive tests, invasive procedures such as cardiac
+            catheterizations, and interventional treatments like stents,
+            pacemaker implants, and defibrillators. Whether you need heart care
+            or treatment, our experts are dedicated to your comfort and
+            well-being.
+          </p>
+        </div>
+        <div class="service">
+          <div class="icon">
+            <i class="fa fa-x-ray text-primary fs-4"></i>
+          </div>
+          <h4>Pulmonary</h4>
+          <p>
+            Our top-ranked Pulmonary Medicine Division at Mayo Clinic diagnoses
+            and treats more than 65,000 adults and children with lung
+            (pulmonary) and sleep disorders each year. Our team of specialists
+            collaborates to address complex conditions affecting the lungs and
+            breathing. Whether you need evaluation, treatment, or ongoing care,
+            trust our experts to provide patient-centered solutions.
+          </p>
+        </div>
+        <div class="service">
+          <div class="icon">
+            <i class="fa fa-brain text-primary fs-4"></i>
+          </div>
+          <h4>Neurology</h4>
+          <p>
+            a team of nationally recognized neurologists and neurosurgeons
+            delivers comprehensive, coordinated care for conditions of the brain
+            and nervous system. We provide care for all types of neurological
+            disorders, from multiple sclerosis and epilepsy to stroke and
+            neurovascular care. Your health is important to us, and we offer
+            both in-person and virtual visits
+          </p>
+        </div>
+        <div class="service">
+          <div class="icon">
+            <i class="fa fa-wheelchair text-primary fs-4"></i>
+          </div>
+          <h4>Orthopedics</h4>
+          <p>
+            At Hospital for Special Surgery (HSS), we are proud to be
+            consistently ranked as the top orthopedic hospital in the United
+            States. Our team of world-class orthopedic specialists provides
+            comprehensive care for bone, joint, and musculoskeletal conditions.
+            From diagnosis to surgery, trust our expertise to guide your
+            treatment options and help you move better. Whether you need spinal
+            surgeries, joint replacements, or sports injury care, HSS is here
+            for you.
+          </p>
+        </div>
+        <div class="service">
+          <div class="icon">
+            <i class="fa fa-tooth text-primary fs-4"></i>
+          </div>
+          <h4>Dental Surgery</h4>
+          <p>
+            Our team of expert dentists and oral and maxillofacial surgeons
+            provides specialized care for a wide range of complex head, neck,
+            and mouth conditions. Whether you need corrective jaw surgery,
+            dental implant-based rehabilitation, treatment for sleep apnea, or
+            facial and dental trauma care, trust us to restore function and
+            enhance your oral health.
+          </p>
+        </div>
+        <div class="service">
+          <div class="icon">
+            <i class="fa fa-vials text-primary fs-4"></i>
+          </div>
+          <h4>Laboratory</h4>
+          <p>
+            Our comprehensive test menu and assay development lab services can
+            support your clinical trials in countries around the world. We
+            tailor our services to meet your program’s requirements, ensuring
+            quality, speed, and advanced diagnostics. With more than 2,250
+            convenient locations across the United States, we’re committed to
+            creating a healthier world—one life at a time.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Services Section End -->
+    <!-- Insurance Section Start -->
+    <section class="insurance">
+      <h2>Insurance</h2>
+      <h3>Insurance Plans</h3>
+      <div class="cards">
+        <div class="plan">
+          <h4>Basic Coverage Plan</h4>
+          <h5>Essential Health</h5>
+          <p>
+            Our Essential Health plan covers basic medical services, including
+            doctor visits, preventive care, and emergency room visits. It’s an
+            affordable option for patients seeking essential coverage.
+          </p>
+        </div>
+        <div class="plan">
+          <h4>Comprehensive Plan</h4>
+          <h5>TotalCare Plus</h5>
+          <p>
+            The TotalCare Plus plan offers comprehensive coverage, including
+            hospital stays, surgeries, prescription drugs, and specialist
+            consultations. It’s ideal for patients who want extensive medical
+            support.
+          </p>
+        </div>
+        <div class="plan">
+          <h4>Specialized Plan</h4>
+          <h5>SpecialtyCare</h5>
+          <p>
+            Our SpecialtyCare plan focuses on specific medical needs, such as
+            maternity care, mental health services, or chronic condition
+            management. It’s tailored to meet unique patient requirements.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Insurance Section End -->
+    <!-- Footer Section Start -->
+    <footer>
+      <div class="col">
+        <h2>Address</h2>
+        <div class="content">
+          <div class="item">
+            <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+            <p>20 No . 20 Al Hay Al 2, El Shorouk, Cairo</p>
+          </div>
+          <div class="item">
+            <div class="icon"><i class="fa-solid fa-phone"></i></div>
+            <p>+201064533093</p>
+          </div>
+          <div class="item">
+            <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+            <p>anasbadlla99@gmail.com</p>
+          </div>
+          <div class="item socials">
+            <div class="icon">
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <div class="icon">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+            <div class="icon">
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="icon">
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <h2>Services</h2>
+        <div class="content service">
+          <a href="#">Cardiology</a>
+          <a href="#">Pulmonary</a>
+          <a href="#">Neurology</a>
+          <a href="#">Orthopedics</a>
+          <a href="#">Laboratory</a>
+        </div>
+      </div>
+      <div class="col">
+        <h2>Quick Links</h2>
+        <div class="content links">
+          <a href="./index.html">Home</a>
+          <a href="./news.html">News</a>
+          <a href="./services.html">Services</a>
+          <a href="./contact.html">Contact Us</a>
+          <a href="./appointment.html">Appointment</a>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+  </body>
+</html>
