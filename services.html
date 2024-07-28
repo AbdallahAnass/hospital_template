@@ -6,8 +6,10 @@
     <title>Good Care</title>
     <!-- Normalize CSS for cross-browser compatibility -->
     <link rel="stylesheet" href="./css/normalize.css" />
-    <!-- Main stylesheet linking -->
-    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Global stylesheet linking -->
+    <link rel="stylesheet" href="./css/global.css" />
+    <!-- Services stylesheet linking -->
+    <link rel="stylesheet" href="./css/services.css" />
     <!-- Font Awesome icons -->
     <link rel="stylesheet" href="./css/all.min.css" />
     <!-- Javascript link -->
@@ -17,7 +19,7 @@
     <!-- Header Start -->
     <header>
       <div class="logo">
-        <div class="icon">
+        <div>
           <i class="fa-solid fa-hospital"></i>
         </div>
         <h1>Good Care</h1>
@@ -39,12 +41,12 @@
     </header>
     <!-- Header End -->
     <!-- Doctors Section Start -->
-    <section class="doctors">
-      <h2>Doctors</h2>
-      <h3>Our Experience Doctors</h3>
+    <section class="doctors container">
+      <h2 class="title">Doctors</h2>
+      <h3 class="sub_title">Our Experience Doctors</h3>
       <div class="cards">
-        <div class="doc">
-          <div class="image">
+        <div class="doc box_shadow">
+          <div>
             <img src="./photos/team-1.jpg" alt="Doctor" />
           </div>
           <div class="text">
@@ -52,7 +54,7 @@
             <p>Cardiology</p>
           </div>
         </div>
-        <div class="doc">
+        <div class="doc box_shadow">
           <div class="image">
             <img src="./photos/team-2.jpg" alt="Doctor" />
           </div>
@@ -61,8 +63,8 @@
             <p>Emergency</p>
           </div>
         </div>
-        <div class="doc">
-          <div class="image">
+        <div class="doc box_shadow">
+          <div>
             <img src="./photos/team-3.jpg" alt="Doctor" />
           </div>
           <div class="text">
@@ -70,8 +72,8 @@
             <p>Surgery</p>
           </div>
         </div>
-        <div class="doc">
-          <div class="image">
+        <div class="doc box_shadow">
+          <div>
             <img src="./photos/team-4.jpg" alt="Doctor" />
           </div>
           <div class="text">
@@ -83,8 +85,8 @@
     </section>
     <!-- Doctors Section End -->
     <!-- Programs Section Start -->
-    <section class="programs">
-      <h2>Health Programs</h2>
+    <section class="programs container">
+      <h2 class="title">Health Programs</h2>
       <div class="content">
         <div class="text">
           <p>
@@ -117,11 +119,11 @@
     </section>
     <!-- Programs Section End -->
     <!-- Services Section Start -->
-    <section class="services">
-      <h2>Services</h2>
-      <h3>Health Care Solutions</h3>
+    <section class="services container">
+      <h2 class="title">Services</h2>
+      <h3 class="sub_title">Health Care Solutions</h3>
       <div class="cards">
-        <div class="service">
+        <div class="service box_shadow">
           <div class="icon">
             <i class="fa fa-heartbeat text-primary fs-4"></i>
           </div>
@@ -137,7 +139,7 @@
             well-being.
           </p>
         </div>
-        <div class="service">
+        <div class="service box_shadow">
           <div class="icon">
             <i class="fa fa-x-ray text-primary fs-4"></i>
           </div>
@@ -151,7 +153,7 @@
             trust our experts to provide patient-centered solutions.
           </p>
         </div>
-        <div class="service">
+        <div class="service box_shadow">
           <div class="icon">
             <i class="fa fa-brain text-primary fs-4"></i>
           </div>
@@ -165,7 +167,7 @@
             both in-person and virtual visits
           </p>
         </div>
-        <div class="service">
+        <div class="service box_shadow">
           <div class="icon">
             <i class="fa fa-wheelchair text-primary fs-4"></i>
           </div>
@@ -181,7 +183,7 @@
             for you.
           </p>
         </div>
-        <div class="service">
+        <div class="service box_shadow">
           <div class="icon">
             <i class="fa fa-tooth text-primary fs-4"></i>
           </div>
@@ -195,7 +197,7 @@
             enhance your oral health.
           </p>
         </div>
-        <div class="service">
+        <div class="service box_shadow">
           <div class="icon">
             <i class="fa fa-vials text-primary fs-4"></i>
           </div>
@@ -213,11 +215,11 @@
     </section>
     <!-- Services Section End -->
     <!-- Insurance Section Start -->
-    <section class="insurance">
-      <h2>Insurance</h2>
-      <h3>Insurance Plans</h3>
+    <section class="insurance container">
+      <h2 class="title">Insurance</h2>
+      <h3 class="sub_title">Insurance Plans</h3>
       <div class="cards">
-        <div class="plan">
+        <div class="plan box_shadow">
           <h4>Basic Coverage Plan</h4>
           <h5>Essential Health</h5>
           <p>
@@ -226,7 +228,7 @@
             affordable option for patients seeking essential coverage.
           </p>
         </div>
-        <div class="plan">
+        <div class="plan box_shadow">
           <h4>Comprehensive Plan</h4>
           <h5>TotalCare Plus</h5>
           <p>
@@ -236,7 +238,7 @@
             support.
           </p>
         </div>
-        <div class="plan">
+        <div class="plan box_shadow">
           <h4>Specialized Plan</h4>
           <h5>SpecialtyCare</h5>
           <p>
@@ -249,33 +251,33 @@
     </section>
     <!-- Insurance Section End -->
     <!-- Footer Section Start -->
-    <footer>
+    <footer class="container">
       <div class="col">
         <h2>Address</h2>
         <div class="content">
           <div class="item">
-            <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div><i class="fa-solid fa-location-dot"></i></div>
             <p>20 No . 20 Al Hay Al 2, El Shorouk, Cairo</p>
           </div>
           <div class="item">
-            <div class="icon"><i class="fa-solid fa-phone"></i></div>
+            <div><i class="fa-solid fa-phone"></i></div>
             <p>+201064533093</p>
           </div>
           <div class="item">
-            <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+            <div><i class="fa-solid fa-envelope"></i></div>
             <p>anasbadlla99@gmail.com</p>
           </div>
           <div class="item socials">
-            <div class="icon">
+            <div>
               <a href="#"><i class="fa-brands fa-twitter"></i></a>
             </div>
-            <div class="icon">
+            <div>
               <a href="#"><i class="fa-brands fa-facebook"></i></a>
             </div>
-            <div class="icon">
+            <div>
               <a href="#"><i class="fa-brands fa-youtube"></i></a>
             </div>
-            <div class="icon">
+            <div>
               <a href="#"><i class="fa-brands fa-linkedin"></i></a>
             </div>
           </div>

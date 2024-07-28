@@ -1,0 +1,196 @@
+/* Doctors Section */
+.doctors .cards {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.doctors .cards > div {
+  flex-basis: calc((100% / 4) - 40px);
+}
+
+.doc {
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #eff5ff;
+  transition: var(--TRANS-VAR);
+}
+
+.doc .text {
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--TEXT-COLOR);
+}
+
+.doc p {
+  font-size: 1.25rem;
+  margin-top: 10px;
+  color: var(--MAIN-COLOR);
+}
+
+@media screen and (max-width: 992px) {
+  .doctors .cards {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .doctors .cards > div {
+    flex-basis: calc((100% / 2) - 30px);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .doctors .cards > div {
+    flex-basis: calc(100% - 20px);
+  }
+}
+
+/* Programs Section */
+.programs .content {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 0rem;
+}
+
+.programs .image {
+  flex-basis: 45%;
+  border-radius: 5px;
+}
+
+.programs img {
+  border-radius: 5px;
+}
+
+.programs .text {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.programs h3 {
+  font-size: 3rem;
+  color: var(--TEXT-COLOR);
+}
+
+.programs p {
+  color: var(--SUB-TITLE-COLOR);
+}
+
+.programs span {
+  font-size: 1.25rem;
+  color: var(--MAIN-COLOR);
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .programs .content {
+    flex-wrap: wrap;
+    gap: 5rem;
+  }
+
+  .programs .image,
+  .programs .text {
+    flex-basis: 100%;
+  }
+}
+
+/* Services Section */
+.services .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.services .cards > div {
+  flex-basis: calc((100% / 3) - 30px);
+}
+
+.service {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: #e1e9f7;
+  transition: var(--TRANS-VAR);
+}
+
+.service .icon {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+}
+
+.service i {
+  font-size: 2rem;
+}
+
+.service h4 {
+  font-size: 2rem;
+}
+
+.service p {
+  color: var(--SUB-TITLE-COLOR);
+}
+
+@media screen and (max-width: 992px) {
+  .services .cards > div {
+    flex-basis: calc((100% / 2) - 30px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .services .cards > div {
+    flex-basis: calc(100% - 30px);
+  }
+}
+
+/* Insurance Section */
+.insurance .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.insurance .cards > div {
+  flex-basis: calc((100% / 3) - 30px);
+}
+
+.plan {
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: #e1e9f7;
+  transition: var(--TRANS-VAR);
+}
+
+.plan h4 {
+  font-size: 2rem;
+  color: var(--MAIN-COLOR);
+}
+
+.plan h5 {
+  font-size: 2rem;
+}
+
+.plan p {
+  color: var(--SUB-TITLE-COLOR);
+}
+
+@media screen and (max-width: 992px) {
+  .insurance .cards > div {
+    flex-basis: calc((100% / 2) - 30px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .insurance .cards > div {
+    flex-basis: calc(100% - 30px);
+  }
+}

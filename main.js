@@ -24,7 +24,7 @@ function display_answer(question) {
   }
 }
 
-// Form validation
+// General form validation
 function check_empty(id) {
   var element = document.getElementById(id);
 
@@ -72,7 +72,8 @@ function check_email() {
   return true;
 }
 
-function check_form() {
+// Appointment form check
+function check_form_app() {
   if (
     !check_empty("name") &&
     !check_empty("condition") &&
@@ -88,7 +89,7 @@ function check_form() {
 }
 
 // Contact form check
-function check_formC() {
+function check_form_contact() {
   if (!check_empty("name") && !check_empty("Subject") && !check_email()) {
     alert("Please make sure you filled out all the fields");
     return false;

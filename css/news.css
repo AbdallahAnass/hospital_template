@@ -1,0 +1,199 @@
+/* Announcements Section */
+.announcements .content {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 0rem;
+}
+
+.announcements .image {
+  flex-basis: 30%;
+}
+
+.announcements .text {
+  flex-basis: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.announcements .text h3 {
+  font-size: 3rem;
+  color: var(--TEXT-COLOR);
+}
+
+.announcements .text p {
+  color: var(--SUB-TITLE-COLOR);
+}
+
+@media screen and (max-width: 768px) {
+  .announcements .content {
+    flex-wrap: wrap;
+    gap: 5rem;
+  }
+
+  .announcements .image,
+  .announcements .text {
+    flex-basis: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .announcements .text h3 {
+    font-size: 2rem;
+  }
+}
+
+/* Events Section */
+.events .content {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 0rem;
+}
+
+.events .image {
+  flex-basis: 45%;
+}
+
+.events img {
+  border-radius: 5px;
+}
+
+.events .text {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.events h3 {
+  font-size: 3rem;
+  color: var(--TEXT-COLOR);
+}
+
+.events p {
+  color: var(--SUB-TITLE-COLOR);
+}
+
+@media screen and (max-width: 768px) {
+  .events .content {
+    flex-wrap: wrap;
+    gap: 5rem;
+  }
+
+  .events .image,
+  .events .text {
+    flex-basis: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .events h3 {
+    font-size: 2rem;
+  }
+}
+
+/* Health tips Section */
+.tips .content {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 0rem;
+}
+
+.tips .image {
+  flex-basis: 45%;
+  border-radius: 5px;
+}
+
+.tips img {
+  border-radius: 5px;
+}
+
+.tips .text {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.tips h3 {
+  font-size: 3rem;
+  color: var(--TEXT-COLOR);
+}
+
+.tips p {
+  color: var(--SUB-TITLE-COLOR);
+}
+
+.tips span {
+  font-size: 1.25rem;
+  color: var(--MAIN-COLOR);
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .tips .content {
+    flex-wrap: wrap;
+    gap: 5rem;
+  }
+
+  .tips .image,
+  .tips .text {
+    flex-basis: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .tips h3 {
+    font-size: 2rem;
+  }
+}
+
+/* FAQS Section */
+.faqs p.sub-title {
+  font-size: 2rem;
+  text-align: center;
+  color: var(--SUB-TITLE-COLOR);
+  margin-bottom: 3rem;
+}
+
+.question {
+  border: 1px solid var(--MAIN-COLOR);
+  border-radius: 5px;
+  padding: 2rem;
+  width: 75%;
+  margin: 0 auto 2rem;
+  color: var(--SUB-TITLE-COLOR);
+  cursor: pointer;
+  position: relative;
+}
+
+.question:hover {
+  color: var(--TEXT-COLOR);
+}
+
+.question::after {
+  content: "+";
+  position: absolute;
+  top: 16px;
+  right: 50px;
+  font-size: 3rem;
+}
+
+.question .title {
+  font-size: 1.25rem;
+}
+
+.question .answer {
+  display: none;
+  padding: 3rem 0;
+}
+
+@media screen and (max-width: 992px) {
+  .question::after {
+    right: 25px;
+  }
+
+  .question .title {
+    width: 80%;
+  }
+}

@@ -1,0 +1,122 @@
+/* Get it touch Section  */
+.get_contact {
+  padding: 4rem 2rem 1rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.get_contact .item {
+  flex-basis: calc((100% / 3) - 30px);
+  background-color: #e1e9f7;
+  padding: 5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.get_contact .item .icon {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+}
+
+.get_contact .item i {
+  font-size: 2rem;
+}
+
+.get_contact h2 {
+  color: var(--SUB-TITLE-COLOR);
+}
+
+.get_contact p {
+  color: var(--TEXT-COLOR);
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .get_contact {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .get_contact .item {
+    flex-basis: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .get_contact .item {
+    padding: 5rem 2.5rem;
+  }
+}
+
+/* Map Section */
+.map {
+  padding: 2rem;
+  width: 100%;
+  height: auto;
+}
+
+.map iframe {
+  width: 100% !important;
+  min-height: 70vh !important;
+}
+
+/* Staff Section */
+.staff {
+  padding: 4rem 2rem;
+}
+
+table {
+  border: 1px solid black;
+  display: block;
+  background-color: #e1e9f7;
+}
+
+table th,
+table td,
+table tr,
+table thead,
+table tbody {
+  display: block;
+}
+
+thead {
+  background-color: white;
+}
+
+thead td {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--SUB-TITLE-COLOR);
+}
+
+table tr {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+table td {
+  padding: 1rem;
+  flex-basis: 20%;
+  color: var(--TEXT-COLOR);
+}
+
+@media screen and (max-width: 576px) {
+  .staff {
+    padding: 2rem 0.5rem;
+  }
+
+  .staff span {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  table tr {
+    padding: 2rem 1rem;
+  }
+}
