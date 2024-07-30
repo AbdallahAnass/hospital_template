@@ -417,3 +417,36 @@ footer .item {
     font-size: 1.25rem;
   }
 }
+
+/* Message Section */
+main {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.message {
+  padding: 10rem 2rem;
+  background-color: var(--MAIN-COLOR);
+  color: white;
+  font-size: 2rem;
+  flex-basis: 70%;
+  text-align: center;
+}
+
+.message p {
+  margin-bottom: 1rem;
+}
+
+.message a.button {
+  background-color: firebrick;
+  margin: 0 auto;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 576px) {
+  .message {
+    flex-basis: 85%;
+  }
+}

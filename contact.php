@@ -1,8 +1,8 @@
 <?php
 
 $servername = "localhost";
-$username = "root";
-$password = "Engineer";
+$username = "your_username";
+$password = "your_password";
 $db_name = "myDB";
 
 // Create connection
@@ -45,6 +45,6 @@ $stmt->close();
 $conn->close();
 
 // Printing SUCCESS MESSAGE
-header("Location: http://localhost/hospital/");
+header("Location: http://localhost/hospital/success.html");
 
 ?>
